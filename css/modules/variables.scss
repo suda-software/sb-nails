@@ -1,0 +1,10 @@
+$font:                    'Montserrat', sans-serif;
+$font-alt:                'Times new Roman', serif;
+
+$background-color:        #03090d;
+$background-alt-color:    desaturate(lighten($background-color, 10%), 25%);
+
+$text-color:              dynamicColor($background-color);
+
+$page-width:              1400px;
+$page-gutter:             20px;

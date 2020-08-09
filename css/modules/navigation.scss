@@ -1,0 +1,77 @@
+#Navigation {
+  position: fixed;
+  z-index: 100;
+  transition: background-color 300ms linear;
+}
+
+#Navigation.default {
+  background-color: transparent;
+}
+
+#Navigation.scrolled {
+  background-color: $background-color;
+}
+
+#Navigation h1.logo {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1em;
+  transition: 300ms linear;
+  transition-property: padding-top, font-size;
+
+  .emphasis {
+    font-weight: 700;
+  }
+}
+
+#Navigation.default h1.logo {
+  padding-top: 110px;
+  font-size: 4em;
+}
+
+#Navigation.scrolled h1.logo {
+  padding-top: 30px;
+  font-size: 2.5em;
+}
+
+#Navigation .main-navigation ul {
+  text-align: center;
+  transition: margin-top 300ms linear;
+  padding-bottom: 10px;
+
+  li {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: border-color 300ms linear;
+    border: solid 1px transparent;
+
+    &:hover {
+      border-color: #ffffff77;
+    }
+
+    &:active {
+      border-color: white;
+    }
+  }
+}
+
+#Navigation.default .main-navigation ul {
+  margin-top: 40px;
+}
+
+#Navigation.scrolled .main-navigation ul {
+  margin-top: 10px;
+}
+
+.socials-container-header {
+  z-index: 101;
+  position: absolute;
+  top: 90px;
+  right: 60px;
+}

@@ -1,0 +1,18 @@
+.button {
+  font: 300 1.33em $font;
+  padding: 15px 30px;
+  border: solid 1px $text-color;
+  color: $text-color;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 300ms linear;
+  display: block;
+  outline: none;
+  border-radius: 0;
+  &:hover { background-color: transparentize(darken($text-color), 0.9); }
+  &:active {
+    background-color: transparentize(darken($text-color, 100%), 0.6);
+    transition-duration: 50ms;
+  }
+}
