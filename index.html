@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="Navigation"
+        data-scroll-subscriber
+        data-set-default-class="default"
+        data-set-scrolled-class="scrolled"
+        class="wrapper default">
+    <nav class="container">
+        <div class="container col-12 main-navigation">
+            <h1 class="logo"><a href="#Home"><strong class="emphasis">SB Nails</strong> & More</a></h1>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="">Over Ons</a></li>
+                <li><a href="">Prijzen</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="socials-container-header">
+            <div class="socials">
+                <ul>
+                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/sb.nailsmore.1"></a></li>
+                    <li class="instagram"><a target="_blank" href="https://instagram.com/sb-nails"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section id="Home" class="wrapper bg">
+    <div class="container container-large bg-img" style="background-image: url('images/jumbotron.jpg')">
+        <div class="jumbotron">
+            <div class="jumbotron-title">Your nails say everything about you</div>
+            <div class="jumbotron-subtitle">Lorem ipsum dolar sit amet</div>
+            <div class="jumbotron-button-container">
+                <button class="button">Maak een afspraak</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    "use strict";
+    (function(){
+        window.addEventListener('scroll', function() {
+            // NOTE: use var for IE 11 compatibility
+            var elem = document.querySelector("[data-scroll-subscriber]");
+            var scrolledClass = elem.getAttribute("data-set-scrolled-class")
+            var defaultClass = elem.getAttribute("data-set-default-class")
+            if (document.documentElement.scrollTop !== 0) {
+                elem.classList.add(scrolledClass);
+                elem.classList.remove(defaultClass);
+            } else {
+                elem.classList.add(defaultClass);
+                elem.classList.remove(scrolledClass);
+            }
+        })
+    }())
+</script>
+</body>
+</html>

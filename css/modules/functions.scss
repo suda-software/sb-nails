@@ -1,0 +1,7 @@
+@function dynamicColor($color) {
+  @if (lightness($color) > 60) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
