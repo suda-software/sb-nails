@@ -12,9 +12,14 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  display: flex;
+  flex-direction: row;
 
   &-large {
     max-width: 1920px;
+  }
+  .column {
+    flex-direction: column;
   }
 }
 
@@ -28,4 +33,17 @@
 
 .col-12 {
   width: 100%;
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-vertically {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

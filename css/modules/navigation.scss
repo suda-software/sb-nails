@@ -14,7 +14,6 @@
 
 #Navigation h1.logo {
   text-align: center;
-  letter-spacing: 1px;
   font-weight: 300;
   line-height: 1em;
   transition: 300ms linear;
@@ -42,7 +41,6 @@
 
   li {
     display: inline-block;
-    padding: 5px 15px;
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
@@ -50,6 +48,10 @@
     text-transform: uppercase;
     transition: border-color 300ms linear;
     border: solid 1px transparent;
+    a {
+      display: block;
+      padding: 5px 15px;
+    }
 
     &:hover {
       border-color: #ffffff77;

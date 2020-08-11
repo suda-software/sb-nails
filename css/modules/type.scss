@@ -5,4 +5,27 @@ html {
 body {
   font: 300 1em/1.5 $font;
   color: $text-color;
+  letter-spacing: 1px;
+}
+
+.page-title {
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font: 400 2em $font-alt;
+  text-align: center;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
 }

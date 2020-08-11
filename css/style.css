@@ -28,6 +28,14 @@ a {
   text-decoration: none;
   color: inherit; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  margin: 0; }
+
+img {
+  margin: 0;
+  max-width: 100%; }
+
 .wrapper {
   position: relative;
   float: left;
@@ -40,9 +48,13 @@ a {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-direction: row; }
   .container-large {
     max-width: 1920px; }
+  .container .column {
+    flex-direction: column; }
 
 .col-4 {
   width: 33.33333333%; }
@@ -53,12 +65,60 @@ a {
 .col-12 {
   width: 100%; }
 
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.center-vertically {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
 html {
   font-size: 18px; }
 
 body {
   font: 300 1em/1.5 "Montserrat", sans-serif;
-  color: #fff; }
+  color: #fff;
+  letter-spacing: 1px; }
+
+.page-title {
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center; }
+
+.subtitle {
+  text-transform: uppercase;
+  font: 400 2em "Times new Roman", serif;
+  text-align: center; }
+
+.justified {
+  text-align: justify; }
+
+.center {
+  text-align: center; }
+
+.pb {
+  padding-bottom: 20px; }
+
+.pr {
+  padding-right: 20px; }
+
+.pl {
+  padding-left: 20px; }
+
+.pb {
+  padding-bottom: 20px; }
+
+.pt3 {
+  padding-top: 60px; }
+
+.pb3 {
+  padding-bottom: 60px; }
 
 #Navigation {
   position: fixed;
@@ -73,7 +133,6 @@ body {
 
 #Navigation h1.logo {
   text-align: center;
-  letter-spacing: 1px;
   font-weight: 300;
   line-height: 1em;
   transition: 300ms linear;
@@ -95,7 +154,6 @@ body {
   padding-bottom: 10px; }
   #Navigation .main-navigation ul li {
     display: inline-block;
-    padding: 5px 15px;
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
@@ -103,6 +161,9 @@ body {
     text-transform: uppercase;
     transition: border-color 300ms linear;
     border: solid 1px transparent; }
+    #Navigation .main-navigation ul li a {
+      display: block;
+      padding: 5px 15px; }
     #Navigation .main-navigation ul li:hover {
       border-color: #ffffff77; }
     #Navigation .main-navigation ul li:active {
@@ -186,3 +247,6 @@ body {
   .button:active {
     background-color: rgba(0, 0, 0, 0.4);
     transition-duration: 50ms; }
+
+.rounded {
+  border-radius: 100%; }
