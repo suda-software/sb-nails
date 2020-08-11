@@ -10,7 +10,11 @@
   display: block;
   outline: none;
   border-radius: 0;
-  &:hover { background-color: transparentize(darken($text-color), 0.9); }
+
+  &:hover {
+    background-color: transparentize(darken($text-color, 20%), 0.9);
+  }
+
   &:active {
     background-color: transparentize(darken($text-color, 100%), 0.6);
     transition-duration: 50ms;
