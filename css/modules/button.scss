@@ -11,6 +11,10 @@
   outline: none;
   border-radius: 0;
 
+  &.button-medium {
+    max-width: 350px;
+  }
+
   &:hover {
     background-color: transparentize(darken($text-color, 20%), 0.9);
   }

@@ -20,6 +20,9 @@ body {
   text-transform: uppercase;
   font: 400 2em $font-alt;
   text-align: center;
+  &.large {
+    font-size: 4em;
+  }
 }
 
 .justified {

@@ -3,16 +3,16 @@
 <head>
     <title>Title</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header id="Navigation"
+<header class="wrapper default"
         data-scroll-subscriber
         data-set-default-class="default"
         data-set-scrolled-class="scrolled"
-        class="wrapper default">
+        id="Navigation">
     <div class="container">
         <div class="col-12 main-navigation">
             <h1 class="logo"><a href="#Home"><strong class="emphasis">SB Nails</strong> & More</a></h1>
@@ -20,7 +20,7 @@
                 <ul>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Over-ons">Over Ons</a></li>
-                    <li><a href="">Prijzen</a></li>
+                    <li><a href="#Prijzen">Prijzen</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
@@ -28,26 +28,27 @@
         <div class="socials-container-header">
             <nav class="socials">
                 <ul>
-                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/sb.nailsmore.1"></a></li>
-                    <li class="instagram"><a target="_blank" href="https://instagram.com/sb-nails"></a></li>
+                    <li class="facebook"><a href="https://www.facebook.com/sb.nailsmore.1" target="_blank"></a></li>
+                    <li class="instagram"><a href="https://instagram.com/sb-nails" target="_blank"></a></li>
                 </ul>
             </nav>
         </div>
     </div>
 </header>
 <main>
-    <section id="Home" class="wrapper bg">
+    <section class="wrapper bg" id="Home">
         <div class="container container-large bg-img" style="background-image: url('images/jumbotron.jpg')">
             <div class="jumbotron">
                 <div class="jumbotron-title">Your nails say everything about you</div>
                 <div class="jumbotron-subtitle">Lorem ipsum dolar sit amet</div>
                 <div class="jumbotron-button-container">
-                    <button class="button">Maak een afspraak</button>
+                    <a class="button" href="#Prijzen">Bekijk de diensten</a>
                 </div>
             </div>
         </div>
     </section>
-    <section id="Over-ons" class="wrapper bg-alt pb3">
+    <section class="wrapper bg-alt pb3">
+        <div id="Over-ons" class="anchor"></div>
         <div class="container">
             <div class="col-12 pt3 pb3">
                 <h2 class="page-title">Over ons</h2>
@@ -55,24 +56,175 @@
         </div>
         <div class="container pb3">
             <div class="col-6 pl pr center-vertically">
-                <img class="rounded block-center" src="images/nagels-1.jpg" alt="Nagels">
+                <img alt="Nagels" class="rounded block-center" src="images/nagels-1.jpg">
             </div>
             <div class="col-6 pl pr center-vertically" style="height: 528px;">
                 <h2 class="subtitle">Wij houden van nagels</h2>
                 <p class="justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis cumque
-                    dolores explicabo, ipsam ipsum minus officiis omnis quas qui quia, quis, recusandae sint tempore vel.
-                    Dolorem, in magnam minus numquam praesentium quam, quis quo similique sit suscipit temporibus vitae!</p>
+                    dolores explicabo, ipsam ipsum minus officiis omnis quas qui quia, quis, recusandae sint tempore
+                    vel.
+                    Dolorem, in magnam minus numquam praesentium quam, quis quo similique sit suscipit temporibus
+                    vitae!</p>
             </div>
         </div>
         <div class="container pb3">
             <div class="col-6 pl pr center-vertically" style="height: 528px;">
                 <h2 class="subtitle">Wij houden van nagels</h2>
                 <p class="justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis cumque
-                    dolores explicabo, ipsam ipsum minus officiis omnis quas qui quia, quis, recusandae sint tempore vel.
-                    Dolorem, in magnam minus numquam praesentium quam, quis quo similique sit suscipit temporibus vitae!</p>
+                    dolores explicabo, ipsam ipsum minus officiis omnis quas qui quia, quis, recusandae sint tempore
+                    vel.
+                    Dolorem, in magnam minus numquam praesentium quam, quis quo similique sit suscipit temporibus
+                    vitae!</p>
             </div>
             <div class="col-6 pl pr center-vertically">
-                <img class="rounded block-center" src="images/nagels-2.jpg" alt="Nagels">
+                <img alt="Nagels" class="rounded block-center" src="images/nagels-2.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="wrapper bg pb3">
+        <div id="Prijzen" class="anchor"></div>
+        <div class="container">
+            <div class="col-12 pt3 pb3">
+                <h2 class="page-title mb">Prijzen</h2>
+                <h3 class="subtitle large mb3">De prijslijst</h3>
+                <table class="table mb3">
+                    <tbody>
+                        <tr>
+                            <td>Nieuwe set acryl / polygel op natuurlijke nagels</td>
+                            <td>€ 27,50</td>
+                        </tr>
+                        <tr>
+                            <td>Babyboom / french met acryl / polygel op natuurlijke nagel</td>
+                            <td>€ 27,50</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Nieuwe set acryl / polygel met verlenging</td>
+                            <td>€ 32,50</td>
+                        </tr>
+                        <tr>
+                            <td>Babyboom / french met acryl / polygel met verlenging</td>
+                            <td>€ 32,50</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Nieuwe set gellak op natuurlijke nagel</td>
+                            <td>€ 17,50</td>
+                        </tr>
+                        <tr>
+                            <td>Nieuwe set gellak op teennagel</td>
+                            <td>€ 17,50</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Opvullen acryl / polygel op natuurlijke nagel</td>
+                            <td>€ 25,00</td>
+                        </tr>
+                        <tr>
+                            <td>Opvullen acryl / polygel met verlenging</td>
+                            <td>€ 27,50</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Opvullen gellak op natuurlijke nagel</td>
+                            <td>€ 15,00</td>
+                        </tr>
+                        <tr>
+                            <td>Opvullen gellak op teennagel</td>
+                            <td>€ 15,00</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Verwijderen acryl / polygel</td>
+                            <td>€ 10,00</td>
+                        </tr>
+                        <tr>
+                            <td>Verwijderen gellak</td>
+                            <td>€ 5,00</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Herstel binnen 1 week</td>
+                            <td>€ Gratis</td>
+                        </tr>
+                        <tr>
+                            <td>Herstel na 2 weken</td>
+                            <td>€ 2,00 per nagel</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Pedicure zonder gellak</td>
+                            <td>€ 15,00</td>
+                        </tr>
+                        <tr>
+                            <td>Pedicure met gellak</td>
+                            <td>€ 17,50</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Spa pedicure zonder gellak</td>
+                            <td>€ 20,00</td>
+                        </tr>
+                        <tr>
+                            <td>Spa pedicure met gellak</td>
+                            <td>€ 22,50</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Manicure zonder gellak</td>
+                            <td>€ 15,00</td>
+                        </tr>
+                        <tr>
+                            <td>Manicure met gellak</td>
+                            <td>€ 17,50</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>Spa manicure zonder gellak</td>
+                            <td>€ 20,00</td>
+                        </tr>
+                        <tr>
+                            <td>Spa manicure met gellak</td>
+                            <td>€ 22,50</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                    <tr>
+                        <td>Nailart op 1 nagel aan beide handen</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td>Nailart op 2 of 3 nagels aan beide handen</td>
+                        <td>€ 2,50 extra</td>
+                    </tr>
+                    <tr>
+                        <td>Nailart op 4 of 5 nagels aan beide handen</td>
+                        <td>€ 5,00 extra</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="#Contact" class="button button-medium block-center">Maak een afspraak</a>
             </div>
         </div>
     </section>

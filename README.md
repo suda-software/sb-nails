@@ -1,5 +1,6 @@
 # TODO
 - on 'MAAK EEN AFSPRAAK' click -> scroll & focus contact
+- kvk nummer in de footer
 
 ## How to start
 

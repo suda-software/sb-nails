@@ -77,3 +77,10 @@
   top: 90px;
   right: 60px;
 }
+
+.anchor {
+  top: -133px;  // dont forget to update in media queries
+  display: block;
+  position: relative;
+  visibility: hidden;
+}
