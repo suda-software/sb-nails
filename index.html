@@ -228,6 +228,51 @@
             </div>
         </div>
     </section>
+    <section class="wrapper pb3 bg-alt">
+        <div id="Contact" class="anchor"></div>
+        <div class="container">
+            <div class="col-12 pt3 pb3">
+                <h2 class="page-title mb">Contact</h2>
+                <h3 class="subtitle large">Neem contact op</h3>
+            </div>
+        </div>
+        <div class="container mb3">
+            <div class="col-12">
+                <address class="contact-container">
+                    <span class="contact-col block center">
+                        <span class="contact-icons contact-icon-marker mb"></span>
+                        Oudlandsestraat 67<br/>4651 MB Steenbergen
+                    </span>
+                    <span class="contact-col block center">
+                        <span class="contact-icons contact-icon-phone mb"></span>
+                        06-48498783
+                    </span>
+                    <span class="contact-col block center">
+                        <span class="contact-icons contact-icon-mail mb"></span>
+                        sannebeensnails@gmail.com
+                    </span>
+                </address>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-12">
+                <div class="contact-container">
+                    <form action="" class="contact-form">
+                        <label class="block" for="Name">Naam *</label>
+                        <input type="text" class="form-element mb3" id="Name"/>
+
+                        <label class="block" for="E-mail">E-mailadres *</label>
+                        <input type="text" name="E-mail" class="form-element mb3" id="E-mail"/>
+
+                        <label class="block" for="Message">Bericht *</label>
+                        <textarea name="Message" class="form-element mb3" id="Message"></textarea>
+
+                        <button class="button">Verzend</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <script>
     "use strict";
@@ -245,7 +290,7 @@
                 elem.classList.remove(scrolledClass);
             }
         };
-        // listener();
+        listener();
         window.addEventListener('scroll', listener)
     }())
 </script>
