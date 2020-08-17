@@ -14,6 +14,14 @@
   padding-bottom: $page-gutter;
 }
 
+.pt2 {
+  padding-top: $page-gutter * 2;
+}
+
+.pb2 {
+  padding-bottom: $page-gutter * 2;
+}
+
 .pt3 {
   padding-top: $page-gutter * 3;
 }
@@ -22,10 +30,18 @@
   padding-bottom: $page-gutter * 3;
 }
 
-
 .mb {
   margin-bottom: $page-gutter;
 }
+
+.ml2 {
+  margin-left: $page-gutter *2;
+}
+
+.mr2 {
+  margin-right: $page-gutter * 2;
+}
+
 .mb3 {
   margin-bottom: $page-gutter * 3;
 }

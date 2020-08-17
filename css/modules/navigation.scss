@@ -48,6 +48,7 @@
     text-transform: uppercase;
     transition: border-color 300ms linear;
     border: solid 1px transparent;
+
     a {
       display: block;
       padding: 5px 15px;
@@ -79,7 +80,7 @@
 }
 
 .anchor {
-  top: -133px;  // dont forget to update in media queries
+  top: -133px; // dont forget to update in media queries
   display: block;
   position: relative;
   visibility: hidden;

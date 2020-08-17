@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   position: relative;
   float: left;
@@ -18,6 +22,7 @@
   &-large {
     max-width: 1920px;
   }
+
   .column {
     flex-direction: column;
   }
@@ -35,6 +40,10 @@
   width: 100%;
 }
 
+.block {
+  display: block;
+}
+
 .block-center {
   display: block;
   margin-left: auto;
@@ -44,10 +53,21 @@
 .center-vertically {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
-.block {
-  display: block;
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
 }

@@ -8,6 +8,9 @@
   font-size: 1em;
   text-transform: uppercase;
 
+  thead {
+    display: block;
+  }
   tr {
     background-color: $background-alt-color;
     transition: background-color 200ms linear;
@@ -32,4 +35,15 @@
     min-width: 200px;
     text-align: right;
   }
+}
+
+.offscreen {
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
 }

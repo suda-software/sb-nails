@@ -33,8 +33,7 @@
   width: 100%;
 
   .form-element {
-    border-color: transparent;
-    border-style: solid;
+    border: solid transparent 3px;
     background: $background-color;
     padding: 12px;
     color: $text-color;
@@ -43,15 +42,38 @@
     margin-top: 10px;
     margin-bottom: 30px;
     font: 300 1em $font;
+    transition-property: border-bottom-color, background-color;
+    transition: 150ms linear;
     &:focus {
       border-bottom: solid 2px $text-color;
       background-color: #355b74;
     }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: lighten($background-color, 20%);
+    }
   }
+
+  .error {
+      border-bottom-color: #b40d0d;
+  }
+
   textarea.form-element {
     min-width: 100%;
     max-width: 100%;
     max-height: 400px;
     min-height: 250px;
   }
+}
+
+#ThankYouMessage {
+  font: 400 1.5em $font-alt;
+  text-transform: uppercase;
+  transition: opacity 200ms linear;
+  width: calc(100% - 297px);
+  text-align: center;
+}
+.hidden {
+  opacity: 0;
 }
