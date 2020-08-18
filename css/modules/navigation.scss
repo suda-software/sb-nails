@@ -12,25 +12,25 @@
   background-color: $background-color;
 }
 
-#Navigation h1.logo {
+#Navigation .logo {
   text-align: center;
   font-weight: 300;
   line-height: 1em;
   transition: 300ms linear;
-  transition-property: padding-top, font-size;
+  transition-property: margin-top, font-size;
 
   .emphasis {
     font-weight: 700;
   }
 }
 
-#Navigation.default h1.logo {
-  padding-top: 110px;
+#Navigation.default .logo {
+  margin-top: 110px;
   font-size: 4em;
 }
 
-#Navigation.scrolled h1.logo {
-  padding-top: 30px;
+#Navigation.scrolled .logo {
+  margin-top: 30px;
   font-size: 2.5em;
 }
 

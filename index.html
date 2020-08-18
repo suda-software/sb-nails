@@ -8,7 +8,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .bg{background-color:#03090d}.bg-alt{background-color:#15242e}.bg-img{background-position:center top;background-repeat:no-repeat;height:1020px}*{box-sizing:border-box}html,body{margin:0;padding:0}ul{list-style:none;padding:0;margin:0}h1{margin:0}a{text-decoration:none;color:inherit}h1,h2,h3,h4,h5,h6{font-size:1em;margin:0}img{margin:0;max-width:100%}address{font-style:normal}small{font-size:0.75em}html{scroll-behavior:smooth}.wrapper{position:relative;float:left;width:100%}.container{max-width:1440px;width:100%;padding-left:20px;padding-right:20px;margin-left:auto;margin-right:auto;position:relative;display:flex;flex-direction:row}.container-large{max-width:1920px}.container .column{flex-direction:column}.col-4{width:33.33333333%}.col-6{width:50%}.col-12{width:100%}.block{display:block}.block-center{display:block;margin-left:auto;margin-right:auto}.center-vertically{display:flex;flex-direction:column;justify-content:center}.space-between{display:flex;justify-content:space-between}.flex-end{display:flex;justify-content:flex-end}.flex-start{display:flex;justify-content:flex-start}html{font-size:18px}body{font:300 1em/1.5 "Montserrat",sans-serif;color:#fff;letter-spacing:1px}.page-title{text-transform:uppercase;opacity:0.5;font-size:1.1em;font-weight:700;text-align:center}.subtitle{text-transform:uppercase;font:400 2em "Times new Roman",serif;text-align:center}.large{font-size:2em}.huge{font-size:4em}.justified{text-align:justify}.center{text-align:center}.p{padding:20px}.pb{padding-bottom:20px}.pr{padding-right:20px}.pl{padding-left:20px}.pb{padding-bottom:20px}.pt2{padding-top:40px}.pb2{padding-bottom:40px}.pt3{padding-top:60px}.pb3{padding-bottom:60px}.mb{margin-bottom:20px}.ml2{margin-left:40px}.mr2{margin-right:40px}.mb3{margin-bottom:60px}#Navigation{position:fixed;z-index:100;transition:background-color 300ms linear}#Navigation.default{background-color:transparent}#Navigation.scrolled{background-color:#03090d}#Navigation .logo{text-align:center;font-weight:300;line-height:1em;transition:300ms linear;transition-property:margin-top, font-size}#Navigation .logo .emphasis{font-weight:700}#Navigation.default .logo{margin-top:110px;font-size:4em}#Navigation.scrolled .logo{margin-top:30px;font-size:2.5em}#Navigation .main-navigation ul{text-align:center;transition:margin-top 300ms linear;padding-bottom:10px}#Navigation .main-navigation ul li{display:inline-block;margin-left:5px;margin-right:5px;cursor:pointer;font-weight:500;text-transform:uppercase;transition:border-color 300ms linear;border:solid 1px transparent}#Navigation .main-navigation ul li a{display:block;padding:5px 15px}#Navigation .main-navigation ul li:hover{border-color:#ffffff77}#Navigation .main-navigation ul li:active{border-color:white}#Navigation.default .main-navigation ul{margin-top:40px}#Navigation.scrolled .main-navigation ul{margin-top:10px}.socials-container-header{z-index:101;position:absolute;top:90px;right:60px}.anchor{top:-133px;display:block;position:relative;visibility:hidden}.socials ul li{display:block;float:left;width:32px;height:26px;background-repeat:no-repeat;background-position:center;opacity:.4;transition:opacity 300ms linear;cursor:pointer}.socials ul li:hover{opacity:.7}.socials ul li:active{opacity:1;transition-duration:25ms}.socials ul li a{display:block;height:100%;width:100%}.socials ul li+li{margin-left:15px}.socials ul .facebook{background-image:url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>')}.socials ul .instagram{background-image:url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>')}.jumbotron{width:100%;height:100%;text-align:center;display:flex;flex-wrap:wrap;align-content:center}.jumbotron-title,.jumbotron-subtitle{width:100%;text-align:center}.jumbotron-title{font:400 2.66em "Times new Roman",serif;margin-top:250px;margin-bottom:110px}.jumbotron-button-container{margin:auto}.button{font:300 1.33em "Montserrat",sans-serif;padding:15px 30px;border:solid 1px #fff;color:#fff;background-color:transparent;text-transform:uppercase;cursor:pointer;transition:background-color 300ms linear;display:block;outline:none;border-radius:0;text-align:center}.button.button-medium{max-width:350px}.button:hover{background-color:rgba(204,204,204,0.1)}.button:active{background-color:rgba(0,0,0,0.4);transition-duration:50ms}.table{display:grid;grid-gap:30px;grid-template-columns:repeat(1, 1fr);grid-auto-flow:unset;width:100%;font-weight:700;font-size:1em;text-transform:uppercase}.table thead{display:block}.table tr{background-color:#15242e;transition:background-color 200ms linear;cursor:initial;display:flex;justify-content:space-between;margin-bottom:10px}.table tr:hover{background-color:#355b74}.table td{padding:15px}.table td+td{font-family:"Montserrat",sans-serif;font-weight:300;padding-right:10px;min-width:200px;text-align:right}.offscreen{clip-path:inset(100%);clip:rect(1px 1px 1px 1px);clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}.contact-icons{display:block;height:100px;width:100%;background-position:center center;background-repeat:no-repeat}.contact-icons.contact-icon-marker{background-image:url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="white" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>')}.contact-icons.contact-icon-phone{background-image:url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>')}.contact-icons.contact-icon-mail{background-image:url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>')}.contact-container{display:flex;justify-content:center}.contact-col{max-width:300px;width:100%}.contact-form{max-width:900px;width:100%}.contact-form .form-element{border:solid transparent 3px;background:#03090d;padding:12px;color:#fff;outline:none;width:100%;margin-top:10px;margin-bottom:30px;font:300 1em "Montserrat",sans-serif;transition-property:border-bottom-color, background-color;transition:150ms linear}.contact-form .form-element:focus{border-bottom:solid 2px #fff;background-color:#355b74}.contact-form .form-element:disabled{cursor:not-allowed;background-color:#164260}.contact-form .error{border-bottom-color:#b40d0d}.contact-form textarea.form-element{min-width:100%;max-width:100%;max-height:400px;min-height:250px}#ThankYouMessage{font:400 1.5em "Times new Roman",serif;text-transform:uppercase;transition:opacity 200ms linear;width:calc(100% - 297px);text-align:center}.hidden{opacity:0}.rounded{border-radius:100%}@media screen and (max-width: 1023px){.bg-img{height:600px;background-size:cover}#Navigation.default .logo{margin-top:10px}#Navigation.default .logo{margin-top:30px;font-size:2.5em}#Navigation.default .main-navigation ul{margin-top:10px}.jumbotron-title{margin-top:100px}.contact-col{width:33%;max-width:initial;word-break:break-all}}@media screen and (max-width: 768px){.socials-container-header{display:none}.col-4,.col-6{width:100%}.container{flex-direction:column}.unset-height-on-mobile{height:initial !important}html{font-size:14px}.huge{font-size:3em}.contact-container{display:block}.contact-col{width:100%;margin-bottom:40px}.contact-icons{height:40px}.table td+td{min-width:100px}#ThankYouMessage{width:100%}footer .container.space-between{display:block}footer .container.space-between .logo{margin-left:0;margin-top:20px;text-align:center}footer .container.space-between .socials{margin:0 auto 10px auto}.p{padding:10px}.pb{padding-bottom:10px}.pr{padding-right:10px}.pl{padding-left:10px}.pb{padding-bottom:10px}.pt2{padding-top:20px}.pb2{padding-bottom:20px}.pt3{padding-top:30px}.pb3{padding-bottom:30px}.mb{margin-bottom:20px}.ml2{margin-left:20px}.mr2{margin-right:20px}.mb3{margin-bottom:30px}}@media screen and (max-width: 601px){.flex-start{width:100%;display:block}#ThankYouMessage{text-align:left;margin-top:30px}}
+    </style>
+
+    <!-- To reduce load time of a separate http-request, the contents of style.css are included inline in the style-tag above -->
+    <!-- NOTE: don't forget to uncomment the import during development -->
+    <!--<link href="css/style.css" rel="stylesheet">-->
 </head>
 <body>
 <header class="wrapper default"
@@ -43,7 +49,6 @@
         <div class="container container-large bg-img" style="background-image: url('images/jumbotron.jpg')">
             <div class="jumbotron">
                 <div class="jumbotron-title">Your nails say everything about you</div>
-                <div class="jumbotron-subtitle"></div>
                 <div class="jumbotron-button-container">
                     <a class="button" href="#Prijzen">Bekijk de diensten</a>
                 </div>
@@ -58,10 +63,10 @@
             </div>
         </div>
         <div class="container pb3">
-            <div class="col-6 pl pr center-vertically">
+            <div class="col-6 p center-vertically">
                 <img alt="Nagels" class="rounded block-center" src="images/nagels-1.jpg">
             </div>
-            <div class="col-6 pl pr center-vertically" style="height: 528px;">
+            <div class="col-6 p center-vertically unset-height-on-mobile" style="height: 528px;">
                 <h2 class="subtitle">Ik ben Sanne</h2>
                 <p class="justified">
                     Ik ben eigenaresse en oprichtster Nagelstudio SB Nails & More.<br>
@@ -73,7 +78,7 @@
             </div>
         </div>
         <div class="container pb3">
-            <div class="col-6 pl pr center-vertically" style="height: 528px;">
+            <div class="col-6 p center-vertically unset-height-on-mobile" style="height: 528px;">
                 <h2 class="subtitle">Meer dan alleen nagels</h2>
                 <p class="justified">
                     In de naam kan je het al lezen wij doen meer dan alleen nagels zetten, ook is er de mogelijk
@@ -83,7 +88,7 @@
                     heeft staan voor uw nagels.
                 </p>
             </div>
-            <div class="col-6 pl pr center-vertically">
+            <div class="col-6 p center-vertically">
                 <img alt="Nagels" class="rounded block-center" src="images/nagels-2.jpg">
             </div>
         </div>
@@ -295,17 +300,17 @@
 <footer class="wrapper bg">
     <div class="container space-between">
         <div class="col-4 large center-vertically">
-            <div class="ml2">
+            <div class="ml2 logo">
                 <strong class="emphasis">SB Nails</strong> &amp; More
             </div>
         </div>
-        <small class="col-4 center pb2 pt2">
+        <small class="col-4 block center pb2 pt2">
             &copy;
             <script>document.write(""+new Date().getFullYear())</script>
             SB Nails &amp; More
         </small>
         <div class="col-4 socials center-vertically">
-            <ul class="flex-end mr2">
+            <ul class="flex-end mr2 socials">
                 <li class="facebook"><a href="https://www.facebook.com/sb.nailsmore.1" rel="noopener noreferrer" target="_blank"></a></li>
                 <li class="instagram"><a href="https://instagram.com/sb-nails" rel="noopener noreferrer" target="_blank"></a></li>
             </ul>
@@ -315,8 +320,8 @@
 <script>
     "use strict";
     (function () {
+        // NOTE: use var for IE 11 compatibility
         let listener = function () {
-            // NOTE: use var for IE 11 compatibility
             var elem = document.querySelector("[data-scroll-subscriber]");
             var scrolledClass = elem.getAttribute("data-set-scrolled-class");
             var defaultClass = elem.getAttribute("data-set-default-class");
