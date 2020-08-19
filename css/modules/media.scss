@@ -27,7 +27,7 @@
   .socials-container-header {
     display: none;
   }
-  .col-4,  .col-6 {
+  .col-4, .col-6 {
     width: 100%;
   }
   .container {
@@ -55,18 +55,21 @@
   .table td + td {
     min-width: 100px;
   }
-
   #ThankYouMessage {
     width: 100%;
   }
-
+  .bg-img {
+    background-position: left center;
+  }
   footer .container.space-between {
     display: block;
+
     .logo {
       margin-left: 0;
       margin-top: 20px;
       text-align: center;
     }
+
     .socials {
       margin: 0 auto 10px auto;
     }
@@ -77,57 +80,61 @@
   .p {
     padding: $page-gutter * 0.5;
   }
-
   .pb {
     padding-bottom: $page-gutter * 0.5;
   }
-
   .pr {
     padding-right: $page-gutter * 0.5;
   }
-
   .pl {
     padding-left: $page-gutter * 0.5;
   }
-
   .pb {
     padding-bottom: $page-gutter * 0.5;
   }
-
   .pt2 {
     padding-top: $page-gutter;
   }
-
   .pb2 {
     padding-bottom: $page-gutter;
   }
-
   .pt3 {
     padding-top: $page-gutter * 1.5;
   }
-
   .pb3 {
     padding-bottom: $page-gutter * 1.5;
   }
-
   .mb {
     margin-bottom: $page-gutter;
   }
-
   .ml2 {
     margin-left: $page-gutter;
   }
-
   .mr2 {
     margin-right: $page-gutter;
   }
-
   .mb3 {
     margin-bottom: $page-gutter * 1.5;
   }
 }
 
 @media screen and (max-width: 601px) {
+  .bg-img {
+    background-position: left -170px center;
+  }
+  #Navigation.scrolled .logo {
+    margin-top: 15px;
+  }
+  #Navigation .main-navigation ul {
+    margin-top: 5px;
+    li {
+      margin-left: 0;
+      margin-right: 0;
+      a {
+        padding: 5px;
+      }
+    }
+  }
   .flex-start {
     width: 100%;
     display: block;
@@ -135,5 +142,29 @@
   #ThankYouMessage {
     text-align: left;
     margin-top: 30px;
+  }
+  .anchor {
+    top: -102px;
+  }
+}
+
+@media screen and (max-width: 382px) {
+  #Navigation .main-navigation ul li a {
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  #Navigation .main-navigation ul li a {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  #Navigation .main-navigation ul li a {
+    padding: 2px 12px;
+  }
+  #Navigation.scrolled .logo {
+    font-size: 2em;
   }
 }

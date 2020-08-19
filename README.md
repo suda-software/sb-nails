@@ -1,11 +1,7 @@
-# TODO
-- on 'MAAK EEN AFSPRAAK' click -> scroll & focus contact
-- kvk nummer in de footer
-
 ## How to start
 
-Start sass watcher:
+Start sass watcher by running `start-sass.bat`
 
-`cd css`
 
-`node-sass -watch style.scss:style.css -style compressed`
+## Todo 
+- Home screen height: 100vh;
