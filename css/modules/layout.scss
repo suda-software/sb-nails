@@ -66,8 +66,11 @@ html {
   justify-content: flex-end;
 }
 
-
 .flex-start {
-  display: flex;
   justify-content: flex-start;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
 }
